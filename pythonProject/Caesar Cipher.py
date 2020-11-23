@@ -1,4 +1,4 @@
-# Muhammad Khan --- 3d
+# Muhammad Khan --- 3D
 """
 Fix the following code so that it works correctly for any offset between -25 and 25
 
