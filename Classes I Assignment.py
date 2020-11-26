@@ -1,4 +1,5 @@
 """ Muhammad Khan
+
 Create Grade class
 
 a. There are two quizzes, each graded on the basis of 10 points.
@@ -60,8 +61,7 @@ class StudentRecord:
     g.set_quiz2(b)
     g.set_midterm(c)
     g.set_final(d)
-    #totalgrades = float((g.get_quiz1() + g.get_quiz2()) / 4 + g.get_midterm() / 4 + g.get_final() / 2)
-    #percent = float(totalgrades/80)*100
+
     totalgrades = float(0.5 * g.get_final() + 0.25 * g.get_midterm() + 0.25 * (g.get_quiz1() + g.get_quiz2()) / 2 * 10)
     percent = float(totalgrades/100)*100
 
