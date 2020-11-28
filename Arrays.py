@@ -84,7 +84,7 @@ for i in range(cols):
     for j in range (rows):
         col.append(2)
     arr.append(col)
-print("Third method to create a 2D array:\n", arr)
+print("Third method to create a 2D array, Line 87:\n", arr)
 print()
 
 
