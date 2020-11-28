@@ -45,7 +45,7 @@ def is_power_of(number, base):
   else:
     return True
 
-  # Recursive case: keep dividing number by base.
+# Recursive case: keep dividing number by base.
   return is_power_of(number, base)
 
 print(is_power_of(8,2)) # Should be True
