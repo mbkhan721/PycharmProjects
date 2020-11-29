@@ -49,8 +49,8 @@ class Grade:
 
 class StudentRecord:
     # Input
-    a = float(input("Enter quiz 1 grades in -/10: "))
-    b = float(input("Enter quiz 2 grades in -/10: "))
+    a = float(input("Enter quiz 1 grades in -/10 format: "))
+    b = float(input("Enter quiz 2 grades in -/10 format: "))
     c = float(input("Enter midterm grades: "))
     d = float(input("Enter final grades: "))
     print()
