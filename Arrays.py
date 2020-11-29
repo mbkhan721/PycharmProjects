@@ -112,4 +112,3 @@ arr[0][1] = 2
 for hor in arr:
     print(hor)
 print()
-
