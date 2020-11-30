@@ -183,4 +183,26 @@ print(describe_furniture(couch))
 print()
 
 
+class Student:
+	def __init__(self):
+		self.name = "unknown"
+		self.id = "unknown"
+	def display(self):
+		print("Name:", self.name, "ID:", self.id)
 
+s1 = Student()
+s1.name = "joe"
+s1.id = "xyz123"
+s1.display()
+print()
+
+
+class Money:
+	def __init__(self, x, y):
+		self. dollars = x
+		self.cents = y
+
+	def display(self):
+		print("$ {}.{}".format(self.dollars, self.cents))
+		print(self.x, self.y)
+		print()
