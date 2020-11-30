@@ -66,3 +66,26 @@ print(lastEven(777))
 print()
 
 
+class Vehicle:
+    def __init__(self, t ="unknown"):
+        self.type = t
+    def print(self):
+        print("type =", self.type)
+x1 = Vehicle()
+x1.print()
+x2 = Vehicle("abcde")
+x2.print()
+print()
+
+class Car(Vehicle):
+    def __init__(self, name="Unknown"):
+        #super().__init__()
+        self.name = name
+        self.type = "Car"
+    def print(self):
+        print(self.type, self.name)
+x1 = Car()
+x1.print()
+x2 = Car("Audi")
+x2.print()
+print()
