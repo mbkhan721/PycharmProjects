@@ -1,4 +1,4 @@
-"""
+# Muhammad Khan
 n = 8
 a = [[0] * n for i in range(n)]
 for i in range(n):
@@ -25,7 +25,7 @@ for k in range(y):
         else:
             z[k][j] = "X"
     print(([str(elem) for elem in row]))
-"""
+
 
 
 # To process 2-dimensional array, you typically use nested loops
@@ -126,3 +126,19 @@ a = [0] * n
 a = [[2] * i + [1] + [0] * (n - i - 1) for i in range(n)]
 for row in a:
     print(' '.join([str(elem) for elem in row]))
+print("----------------- Line 129 -------------------------")
+print()
+
+n = 8
+a = [["*"] * n for i in range(n)]
+for i in range(n):
+    for j in range(0, i):
+        a[i][j] = "="
+        #a[i][i] = 1
+    for j in range(i + 1, n):
+        a[i][j] = "*"
+for row in a:
+    print(' '.join([str(elem) for elem in row]))
+print()
+
+
