@@ -142,3 +142,34 @@ for row in a:
 print()
 
 
+
+# print(18 // 4)  called Floor Division outputs 4
+# // Quotient when a is divided by b, rounded to the next smallest whole number
+
+# print(18 % 4) called modulus outputs 2
+
+
+
+"""2. Display the American flag using a nested loop of these dimensions:
+ 20x7 flag
+ 7x4 stars as *
+ Alternate = and – to represent stripe colors
+
+*******=============
+*******-------------
+*******=============
+*******-------------
+====================
+--------------------
+====================
+"""
+
+for i in range(1, 8):   # Loops through rows 1 to 7
+    for j in range(1, 29):  # Loops through columns 1 to 20
+        if j <= 10 and i <=4:    # Check for the stars
+            print("*", end="")  # Prints the stars
+        elif i % 2 == 0:    # Checks for alternate lines
+            print("-", end="")  # Prints dash
+        else:
+            print("=", end="")  # Prints equals
+    print()

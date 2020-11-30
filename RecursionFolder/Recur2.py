@@ -19,3 +19,24 @@ def count(spacer, n):
 
 count(">", 10)
 print()
+
+
+
+def remove_first(n):
+    digit = n % 10
+    print("N =", n, "Digit =", digit)
+
+    if n < 10:
+        print("Base case")
+        return 0
+
+    ret = remove_first(n//10)
+    val = digit + 10 * ret
+    print("Return =", ret, "Value =", val)
+    return val
+print(remove_first(1234))
+
+# print(18 // 4)  called Floor Division outputs 4
+# // Quotient when a is divided by b, rounded to the next smallest whole number
+
+# print(18 % 4) called modulus outputs 2
