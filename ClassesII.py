@@ -204,5 +204,6 @@ class Money:
 
 	def display(self):
 		print("$ {}.{}".format(self.dollars, self.cents))
-		print(self.x, self.y)
 		print()
+m1 = Money(525, 55)
+m1.display()
