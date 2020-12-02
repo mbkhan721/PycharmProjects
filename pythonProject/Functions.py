@@ -6,6 +6,64 @@ def my_function(*kids):
     print("The youngest child is " + kids[4])
 my_function("Emil", "Tobias", "Linus", "John", "Khan")
 
+print()
+print("------------- Exercise 12 -------------")
+print()
+
+import random
+from random import randrange
+n = 10
+a = [randrange(1, 7) for i in range(n)]
+print("Roll of dice this time is:", a)
+
+print()
+print("------------- Exercise 13 -------------")
+print()
+
+def sum(numbers):
+    total = 0
+    for x in numbers:
+        total += x
+    return total
+print("The sum of all number is:", sum((1, 2, 3, 4, 5)))
+
+print()
+print("------------- Exercise 14 -------------")
+print()
+
+def smFact(n):
+    if (n % 2 == 0):
+        return 2;
+
+    i = 3;
+    while(i * i <= n):
+        if (n % i == 0):
+            return i;
+        i += 2;
+    return n;
+
+n = 81; # Enter a number here to find its smallest factor
+
+print("Smallest factorial of the given number is: ", smFact(n));
+
+print()
+print("------------- Exercise 15 -------------")
+print()
+
+def Reverse_int(val):
+    rev = 0
+    while val > 0:
+        digit = val % 10
+        rev = (rev*10) + digit
+        val = val//10
+    return rev
+
+#val = int(input("Enter upto 10 numbers to reverse: "))
+rev = Reverse_int(123)
+print("Reversed numbers are: %d" %rev)
+print()
+
+
 """
 def is_divisible(x, y):
     if x % y == 0:
