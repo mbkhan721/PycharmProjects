@@ -27,12 +27,12 @@ print()
 # 4.	Limit the quantities between 0 and 5.  Limit the prices to 9 dollars.
 # 5.	Create and print a list (listItems) for 6 items sold.
 #       each item should be 5 characters long
-n = 6
+#n = 6
 # n = 4
 #       Filled some list items with blanks to make it 5 chars
 listItems = ["Pencl", "Blpen  ", "Book ", "Bakpak", "Erasr", "Glue "]
-#listItems = ["Pencil", "Ballpen  ", "Notebook ", "Backpack",]
-
+#listItems = ["Pencl", "Blpen  ", "Book ", "Bakpak",]
+n = len(listItems)
 # 6.	Create and print a list (listDays) for the five days of the week (Mon-Fri)
 listDays = ["Mon", "Tue", "Wed", "Thu", "Fri"]
 print("Days = 5", listDays)
