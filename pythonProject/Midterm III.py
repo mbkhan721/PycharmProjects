@@ -105,23 +105,23 @@ def colTot(table, n): # Finding total number item sold in a week
 
 # 12.	Create a function colAmt which will multiply the price of each item by the
 #       daily quantity, round to 2 decimal places and print the result
-def calAmt(piece,price): #calculating Total in column wise
-    Total = []
+def calAmt(piece,price): #calculating Total in columns
+    total = []
     for i in range(len(piece)):
-        Total.append(round(piece[i] * price[i], 2))
-    return Total
+        total.append(round(piece[i] * price[i], 2))
+    return total
 
-j=0
+j = 0
 for day in listDays: # Printing 2D array
-    if j==n:
+    if j == n:
         break
     print(day, end = '\t')
-    row=table[j]
+    row = table[j]
 
 # Number of items sold on a daily basis
     for item in row:
         print("     ", item, end = '\t')
-    total=rowTot(row,price)
+    total = rowTot(row, price)
     print("   $", total)
     j += 1
 print("        ------  ------  -----   ------  ------  -----")
@@ -132,10 +132,10 @@ pieces = colTot(table, n)
 for item in pieces:
     print(" ", item, end = "\t")
 print()
-print('Total',end='\t')
-Total=calAmt(pieces,price)
+print('Total', end = '\t')
+total = calAmt(pieces, price)
 
 # Printing the total weekly sale
-for item in Total:
+for item in total:
     print(item, end = "\t")
 print()
