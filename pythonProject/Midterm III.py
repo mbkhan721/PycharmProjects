@@ -27,15 +27,17 @@ print()
 # 4.	Limit the quantities between 0 and 5.  Limit the prices to 9 dollars.
 # 5.	Create and print a list (listItems) for 6 items sold.
 #       each item should be 5 characters long
-#n = 6
-# n = 4
+
+
 #       Filled some list items with blanks to make it 5 chars
 listItems = ["Pencl", "Blpen  ", "Book ", "Bakpak", "Erasr", "Glue "]
-#listItems = ["Pencl", "Blpen  ", "Book ", "Bakpak",]
 n = len(listItems)
+
 # 6.	Create and print a list (listDays) for the five days of the week (Mon-Fri)
-listDays = ["Mon", "Tue", "Wed", "Thu", "Fri"]
-print("Days = 5", listDays)
+listDays = ["Mon", "Tue", "Wed", "Thu", "Fri"] # Five days
+#listDays = ["Mon", "Tue", "Wed", "Thu"] # Four days
+d = len(listDays)
+print("Days =", d, listDays)
 print("Items", n, listItems)
 
 # 7.	Create a function itemSoldPerDay that generates and returns a list of random
@@ -102,7 +104,7 @@ def colTot(table, n): # Finding total number item sold in a week
     return piece
 
 # 12.	Create a function colAmt which will multiply the price of each item by the
-#       daily quantity,  round to 2 decimal places and print the result
+#       daily quantity, round to 2 decimal places and print the result
 def calAmt(piece,price): #calculating Total in column wise
     Total = []
     for i in range(len(piece)):
