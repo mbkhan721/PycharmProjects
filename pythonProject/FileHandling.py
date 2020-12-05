@@ -69,5 +69,70 @@ f = open("pythonPrac.txt", "r")
 print(f.read())
 """
 
+"""
+f = open("myfile.txt", "a")
+f.write("This file was just created.\nThis line is just added to it")
+f.close()
+print("Characters added!")
+"""
 
-# Left a create a new file https://www.w3schools.com/python/python_file_write.asp
+"""
+f = open("myfile.txt", "w")
+f.write("This code is jsut added to the new file.\nReplacing the old one.")
+f.close()
+"""
+
+# To delete a file
+"""
+import os
+os.remove("myfile.txt")
+"""
+
+# Check if file exists, then delete it
+"""
+import os
+if os.path.exists("myfile.txt"):
+    os.remove("myfile.txt")
+else:
+    print("This file does not exits")
+
+    
+# Remove the folder "myfolder"
+
+# import os
+# os.rmdir("myfolder")
+
+# You can only remove empty folders
+"""
+
+# Exercise 1
+""" Open a blank file in your text editor and write a few lines
+summarizing what you’ve learned about Python so far.
+Start each line with the phrase In Python you can.... Save
+the file as learning_python.txt in the same directory as your
+exercises from this chapter.
+• Write a program that reads the file and prints what you
+wrote three times.
+• Print the contents once by reading in the entire file, once
+by looping over the file object, and once by storing the
+lines in a list and then working with them outside the with
+block. """
+"""
+file = open("pythonPrac.txt", "r")
+print("* Reading in the entire file:\n", file.read())
+file.close()
+
+print("\n* Looping over the file objects:")
+file = open("pythonPrac.txt", "r")
+for i in file:
+    print(i.rstrip())
+file.close()
+
+print("\n* Sorting lines in a list:")
+with open("pythonPrac.txt") as f:
+    lines = f.readlines()
+for line in lines:
+    print(line.rstrip())
+file.close()
+"""
+
