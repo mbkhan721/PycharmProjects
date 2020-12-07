@@ -25,9 +25,10 @@ rose.color = "red"
 violet = Flower()
 violet.color = "blue"
 this_pun_is_for_you = Flower()
+this_pun_is_for_you.color = "this is so true!"
 print("Roses are {},".format(rose.color))
 print("violets are {},".format(violet.color))
-print(this_pun_is_for_you)
+print("You code lazy, {},".format(this_pun_is_for_you.color))
 print()
 
 
