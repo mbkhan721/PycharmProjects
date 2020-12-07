@@ -52,7 +52,7 @@ f.close()
 """
 # Add a parameter to the open() function to write to an existing file
 f = open("pythonPrac.txt", "a") # "a" will append to the end of the file
-f.write("This should be another one.\n")
+f.write("This should add this line to the file.\n")
 f.close()
 
 f = open("pythonPrac.txt", "r") #open and read the file after the appending
@@ -67,6 +67,7 @@ f.close()
 
 f = open("pythonPrac.txt", "r")
 print(f.read())
+f.close()
 """
 
 """
