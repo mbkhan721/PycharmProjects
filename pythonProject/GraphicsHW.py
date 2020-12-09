@@ -1,6 +1,9 @@
 import turtle
 t = turtle.Turtle()
-t.width(2)  # 1:12
+t.width(2)
+t.pencolor("lightBlue")
+t.pensize(6)
+
 
 HEIGHT = 50 # Letter D wont adjust to the height as i commented out the first one
 WIDTH = 40
