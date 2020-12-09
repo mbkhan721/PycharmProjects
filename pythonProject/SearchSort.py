@@ -42,3 +42,30 @@ while left <= right:
     else:
         print("bigger")
         left = middle+1
+
+print()
+def swap(a, b):
+    temp = x[a]
+    x[a] = x[b]
+    x[b] = temp
+#
+
+x = [8, 2, 5, 9, 1, 4]
+print( x )
+
+
+swapped = True
+cnt = 1
+while swapped:
+    swapped = False
+    print("iteration:", cnt)
+    cnt += 1
+    #input()
+    for i in range(len(x) - 1):
+        if x[i] > x[i+1]:
+            swap( i, i+1 )
+            swapped = True
+            print( x )
+    #
+
+print( "Completed: ", x )
