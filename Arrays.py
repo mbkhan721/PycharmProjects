@@ -16,7 +16,7 @@ print()
 
 
 print()
-for x in range(7):
+for x in range(1,7): # 1 through 7
     print(x, end = " ")
 else:
     print("Finally finished!")
