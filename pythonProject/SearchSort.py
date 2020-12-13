@@ -7,6 +7,7 @@ Can use time() in time module
 Returns number of seconds that have elapsed between current time on the computer’s
 clock and January 1, 1970
  """
+import time
 
 
 def ourMin(lyst):
@@ -23,14 +24,13 @@ def ourMin(lyst):
 x = [1, 2, 3, 4, 5, 6]
 print(x)
 
-
 left = 0
 right = len(x) - 1
 
 val = 6
 
 while left <= right:
-    middle = (left+right)//2
+    middle = (left + right) // 2
     print(left, ", ", right, ", ", middle, ", ", x[left], ", ", x[right], ", ", x[middle])
 
     if val == x[middle]:
@@ -38,21 +38,24 @@ while left <= right:
         break
     elif val <= x[middle]:
         print("smaller")
-        right = middle-1
+        right = middle - 1
     else:
         print("bigger")
-        left = middle+1
+        left = middle + 1
 
 print()
+
+
 def swap(a, b):
     temp = x[a]
     x[a] = x[b]
     x[b] = temp
+
+
 #
 
 x = [8, 2, 5, 9, 1, 4]
-print( x )
-
+print(x)
 
 swapped = True
 cnt = 1
@@ -60,12 +63,26 @@ while swapped:
     swapped = False
     print("iteration:", cnt)
     cnt += 1
-    #input()
+    # input()
     for i in range(len(x) - 1):
-        if x[i] > x[i+1]:
-            swap( i, i+1 )
+        if x[i] > x[i + 1]:
+            swap(i, i + 1)
             swapped = True
-            print( x )
+            print(x)
     #
 
-print( "Completed: ", x )
+print("Completed: ", x)
+
+
+problemSize = 10000000
+print("%12s16s")
+for count in range(5):
+    start = time.time()
+    # The start of the algorithm
+    work = 1
+    for x in range(problemSize):
+        work += 1
+    # The end of the algorithm
+    elapsed = time.time()
+    print("%12d%16.3f" % (problemSize, elapsed))
+    problemSize *= 2
