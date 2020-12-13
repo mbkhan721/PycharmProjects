@@ -20,6 +20,7 @@ Define and use a class for the student record.  Use setter and getter methods, d
 data directly.
 """
 
+
 class Grade:
     def _init_(self, quiz1, quiz2, midterm, final):
         self.quiz1 = quiz1
@@ -30,22 +31,29 @@ class Grade:
     # getter method
     def get_quiz1(self):
         return self.quiz1
+
     def get_quiz2(self):
         return self.quiz2
+
     def get_midterm(self):
         return self.midterm
+
     def get_final(self):
         return self.final
 
     # setter method
     def set_quiz1(self, quiz1):
         self.quiz1 = quiz1
+
     def set_quiz2(self, quiz2):
         self.quiz2 = quiz2
+
     def set_midterm(self, midterm):
         self.midterm = midterm
+
     def set_final(self, final):
         self.final = final
+
 
 class StudentRecord:
     # Input
@@ -55,7 +63,7 @@ class StudentRecord:
     d = float(input("Enter final grades: "))
     print()
 
-    g=Grade();
+    g = Grade()
     # setting the grades using setter
     g.set_quiz1(a)
     g.set_quiz2(b)
@@ -63,24 +71,23 @@ class StudentRecord:
     g.set_final(d)
 
     totalgrades = float(0.5 * g.get_final() + 0.25 * g.get_midterm() + 0.25 * (g.get_quiz1() + g.get_quiz2()) / 2 * 10)
-    percent = float(totalgrades/100)*100
+    percent = float(totalgrades / 100) * 100
 
-    if percent>=90:
-        grade='A'
-    elif percent>=80 and percent<90:
-        grade='B'
-    elif percent>=70 and percent<80:
-        grade='C'
-    elif percent>=60 and percent<70:
-        grade='D'
+    if percent >= 90:
+        grade = 'A'
+    elif percent >= 80 and percent < 90:
+        grade = 'B'
+    elif percent >= 70 and percent < 80:
+        grade = 'C'
+    elif percent >= 60 and percent < 70:
+        grade = 'D'
     else:
-        grade='F'
+        grade = 'F'
 
     print("Quiz 1 grades: " + str(g.get_quiz1()))
     print("Quiz 2 grades: " + str(g.get_quiz2()))
     print("Midterm grades: " + str(g.get_midterm()))
     print("Final grades: " + str(g.get_final()))
     print()
-    print("Total percentage: "+str(percent))
-    print("Letter grade: "+str(grade))
-
+    print("Total percentage: " + str(percent))
+    print("Letter grade: " + str(grade))
