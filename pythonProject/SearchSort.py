@@ -74,15 +74,4 @@ while swapped:
 print("Completed: ", x)
 
 
-problemSize = 10000000
-print("%12s16s")
-for count in range(5):
-    start = time.time()
-    # The start of the algorithm
-    work = 1
-    for x in range(problemSize):
-        work += 1
-    # The end of the algorithm
-    elapsed = time.time()
-    print("%12d%16.3f" % (problemSize, elapsed))
-    problemSize *= 2
+
